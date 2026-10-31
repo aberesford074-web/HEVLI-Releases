@@ -1,0 +1,8 @@
+# Releases are attached to GitHub Releases, not committed to the repository.
+*.dmg
+*.exe
+*.tar.gz
+*.sig
+latest.json
+SHA256SUMS
+BUILD-INFO.txt
