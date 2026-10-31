@@ -1,31 +1,36 @@
 # HEVLI Releases
 
 Official HEVLI Workspace downloads will be published here after each installer
-has passed its platform signing, clean-computer installation, account and update
-checks.
+has passed platform-specific installation, launch, account and update checks.
 
 ## Current availability
 
-There are no public installers yet. The HEVLI website's early-access form stays
-available until the Mac beta is signed, notarized and verified on a separate
-Mac. Windows downloads will appear only after Authenticode signing and separate
-Windows verification.
+The [1.0.4-beta.1 source-only prerelease](https://github.com/aberesford074-web/HEVLI-Releases/releases/tag/sources-v1.0.4-beta.1)
+contains desktop and hosted-backend source snapshots, licence files, notices
+and checksums. It contains no application installers.
+
+There are no public installers yet. The unsigned macOS Apple Silicon beta is
+being verified in an isolated environment; Gatekeeper warnings are expected.
+The Windows x64 installer still needs a clean install and launch test. The
+HEVLI website's early-access form stays available until installers are verified
+and approved for release.
 
 ## Release contents
 
-Each verified release is expected to include the platform installer, signed
-updater payload and `latest.json` manifest, `SHA256SUMS`, build information, a
-source archive for the exact release commit, and license and third-party
-notices. Source archives contain a source snapshot and omit Git history and
-unreleased branches.
+Each verified application release is expected to include platform installers,
+the signed updater payload and `latest.json` manifest, `SHA256SUMS`, build
+information, a source archive for the exact release commit, and licence and
+third-party notices. Source archives contain a source snapshot and omit Git
+history and unreleased branches.
 
 The desktop source archive retains the applicable MPL-2.0 terms and notices,
 omits Git history, and excludes one updater test-only private RSA fixture with a
-separate explanation file.
-The separate HEVLI backend is AGPL-3.0-only; its matching source must also be
-made available to people interacting with the hosted service. Each release
-will identify the matching backend source snapshot once its deployed commit has
-been confirmed.
+separate explanation file. The desktop snapshot corresponds to commit
+`fe586745fa51091165eec10074174d17f4ec87c1`.
+
+The separate HEVLI backend is AGPL-3.0-only. The source-only prerelease includes
+the backend snapshot matching the live Render commit
+`25fa1a872ab409388050a24e6b2a147552824cf3`.
 
 ## Download safety
 
