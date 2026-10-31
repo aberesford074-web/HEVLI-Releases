@@ -1,4 +1,5 @@
 # Releases are attached to GitHub Releases, not committed to the repository.
+/prepared/
 *.dmg
 *.exe
 *.tar.gz

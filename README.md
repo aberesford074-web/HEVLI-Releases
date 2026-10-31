@@ -19,7 +19,9 @@ source archive for the exact release commit, and license and third-party
 notices. Source archives contain a source snapshot and omit Git history and
 unreleased branches.
 
-The desktop source archive retains the applicable MPL-2.0 terms and notices.
+The desktop source archive retains the applicable MPL-2.0 terms and notices,
+omits Git history, and excludes one updater test-only private RSA fixture with a
+separate explanation file.
 The separate HEVLI backend is AGPL-3.0-only; its matching source must also be
 made available to people interacting with the hosted service. Each release
 will identify the matching backend source snapshot once its deployed commit has
